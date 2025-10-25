@@ -5,6 +5,12 @@ DuckDB (Python) CSV -> Parquet batch converter
 - Writes Parquet files to a mirrored path under the output directory
 - Uses DuckDB's COPY with ZSTD compression (level configurable)
 - Safe on 16 GB RAM; DuckDB streams CSV -> Parquet
+- Used caffeinate so the Mac doesn’t sleep.
+- Compression range: 1 to 22. Max is 22 and takes long. Typically 9 is balanced with ~4–6× faster writes with only a small size penalty (a few % to ~10%).
+- PRAGMA threads=4 avoids thermal throttling; raise to 6–8 if you want to push harder.
+- DuckDB streams CSV → Parquet; typical memory is sub-GB to a few GB, depending on columns.
+- DuckDB & PyArrow stream data in chunks; they don’t need to load a 90 GB CSV into RAM. With sensible settings, memory stays well under a few GB.
+- 90GB compression at level 22 can take upto 10 hours.
 
 Install:
   python3 -m pip install duckdb
