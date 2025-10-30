@@ -1,10 +1,9 @@
 ![alt text](https://github.com/Singularity-Coder/NYC-Taxi-Dashboard/blob/main/assets/banner.jpg)
 
-# NYC-Taxi-Dashboard
+# NYC Taxi KPI Dashboard
 An interactive Tableau dashboard showing NYC taxi patterns, weather impact, and neighborhood performance.
 
-## Tableau Dashboard
-[Tableau Visualization Link](https://public.tableau.com/app/profile/hithesh.v1025/viz/Book1_17614471053210/NYCTaxiDash1?publish=yes)
+## Tableau Dashboard - [Link](https://public.tableau.com/app/profile/hithesh.v1025/viz/Book1_17614471053210/NYCTaxiDash1?publish=yes)
 ![alt text](https://github.com/Singularity-Coder/NYC-Taxi-Dashboard/blob/main/assets/sc1.png)
 ![alt text](https://github.com/Singularity-Coder/NYC-Taxi-Dashboard/blob/main/assets/sc2.png)
 
